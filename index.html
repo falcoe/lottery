@@ -4,7 +4,7 @@
     <meta name="screen-orientation" content="portrait">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
-    <title>年会抽奖小程序</title>
+    <title>Gala du Nouvel An Chinois</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/wall.css">
     <style type="text/css">
@@ -234,9 +234,9 @@
             methods: {
                 reset: function(){
                     if(confirm('确定要重置么？所有之前的抽奖历史将被清除！')){
-                        if(confirm('真的确定重置么？所有之前的抽奖历史将被清除！')){
+                        if(confirm('真的确定重置么？')){
                             localStorage.clear();
-                        location.reload(true);
+                            location.reload(true);
                         }
                     }
                 },
