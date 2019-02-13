@@ -67,8 +67,9 @@
             let locals = window.localStorage
             let str_results = []
             // 遍历(排除choosed)
-            for(let i = 0; i<localStorage.length; i++){
+            for(let i = 0; i<localStorage.length - 1; i++){
                 if (localStorage.key(i) !== 'choosed') {
+                    console.log(localStorage.getItem(localStorage.key(i)))
                     str_results.push(localStorage.getItem(localStorage.key(i)))
                 }
             }
